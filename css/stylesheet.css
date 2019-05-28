@@ -19,6 +19,13 @@ a{
   text-decoration: none;
 }
 
+/* 플로트 이슈를 해결하기 위한 클래스 */
+.clearfix::after{
+  content: '';
+  clear: both;
+  display: block;
+}
+
 /* 레이아웃 */
 .header, .visual, .main, .slogan, .footer{
   width: 940px;
@@ -30,9 +37,10 @@ a{
 .header{  
   background-color: #fff;
   position: relative;
+  padding: 0 30px;
   /* left: 100px;
   top: 50px; */
-  
+  /* border-top: 1px solid red; */
 }
 
 /* 로고 */
@@ -45,18 +53,37 @@ a{
 
 /* 멤버링크 */
 .member{
-  background-color: yellow;
-  width: 100px;
-  font-size: 0;
+  float: right;
+  text-transform: uppercase;  
+  padding: 2px 0;
+  /* background-color: yellow; */
+  position: relative;
+  right: -10px;
+
 }
 
 .member li{
- background-color: pink;
- display: inline;
- font-size: 16px;
- 
+ /* background-color: pink; */
+ float: left;
 }
 
+.member li:nth-child(n+2):before{
+  content: ':';
+}
+
+.member a{
+  display: inline-block;
+  /* background-color: aqua; */
+  padding: 8px 10px;
+}
+
+/* 메인메뉴 */
+.navigation{
+  background-color: lime;
+  clear: both;
+  /* clear: both; */
+  /* margin-top: 50px; */
+}
 
 /* 비주얼 */
 .visual{
