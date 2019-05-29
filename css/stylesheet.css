@@ -32,7 +32,7 @@ body{
 
   background: url('images/bg_flower.png') no-repeat 50% 0,
   #aaa linear-gradient(#aaa 0%, #eee 30%, #fff 50%, #fff 100%);
-  
+
   color: #181818;
   font-family: 'Spoqa Han Sans', sans-serif;
   font-size: 1.4rem;
@@ -186,9 +186,42 @@ a{
 
 
 /* 비주얼 */
+@keyframes textAni{
+  0%{
+    color: rgba(0,0,0,0);
+    font-size: 12px;
+    /* padding: 0; */
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+    transform: translate(0,0);
+  }
+  100%{
+    color: rgba(0,0,0,1);
+    font-size: 24px;
+    /* padding: 75px 0 0 400px; */
+    /* position: absolute;
+    top: 75px;
+    left: 400px; */
+    transform: translate(400px, 75px);
+  }
+}
 .visual{
   /* background-color: orangered; */
   height: 120px;
+  position: relative;
+}
+.visual-text{
+  background-color: yellow;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  animation-name: textAni;
+  animation-duration: 3000ms;
+  animation-fill-mode: forwards;
+  /* width: 500px; */
+  display: inline-block
+  max-width = 540px;
+  
+  
 }
 
 /* 메인 콘텐츠 */
