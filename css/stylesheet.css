@@ -24,7 +24,15 @@ html{
 }
 
 body{
-  background-color: grey;
+  /* background-color: #aaa;
+  background-image: url('images/bg_flower.png'),
+  linear-gradient(#aaa 0%, #eee 30%, #fff 50%, #fff 100%);
+  background-repeat: no-repeat;
+  background-position: 50% 0; */
+
+  background: url('images/bg_flower.png') no-repeat 50% 0,
+  #aaa linear-gradient(#aaa 0%, #eee 30%, #fff 50%, #fff 100%);
+  
   color: #181818;
   font-family: 'Spoqa Han Sans', sans-serif;
   font-size: 1.4rem;
@@ -179,8 +187,8 @@ a{
 
 /* 비주얼 */
 .visual{
-  background-color: orangered;
-  height: 10vh;
+  /* background-color: orangered; */
+  height: 120px;
 }
 
 /* 메인 콘텐츠 */
