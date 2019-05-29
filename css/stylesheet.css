@@ -256,7 +256,7 @@ a{
   /* animation-name: textAni;
   animation-duration: 1000ms;
   animation-fill-mode: forwards; */
-  animation: textAni 1000ms forwards;
+  animation: textAni 3000ms forwards;
   /* width: 500px; */
   display: inline-block;
   max-width : 540px;
