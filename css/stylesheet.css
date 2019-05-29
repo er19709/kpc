@@ -218,8 +218,8 @@ a{
   animation-duration: 3000ms;
   animation-fill-mode: forwards;
   /* width: 500px; */
-  display: inline-block
-  max-width = 540px;
+  display: inline-block;
+  max-width : 540px;
   
   
 }
