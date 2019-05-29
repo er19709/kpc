@@ -123,7 +123,6 @@ a{
   padding: 0 20px;
 }
 
-
 .menu-item-text{
   cursor: pointer;
   display: block;
@@ -306,9 +305,8 @@ a{
 .sign{  
   background: #fff;
   padding: 7px 9px;
-  border-radius: 0 0 5px 5px;  
-  background: yellow;
-  display: flex;  /*부모에게 줌.*/
+  border-radius: 0 0 5px 5px;    
+  display: flex;  /* 요소들을 가로로 배치하고 싶을때. 부모쪽에*/
   justify-content: space-between;  /* 균등하게 분할*/
   letter-spacing: -1px;    /*글자 간격 조절*/
 }
@@ -318,12 +316,20 @@ a{
   margin: 0;
 }
 
-/* 실습 */
-/* .btn-login{
-  float: right;    
-  background: #ed552f;
-  border-radius: 5px 5px 5px 5px;  
-} */
+/* 유효성 검사 배너 */
+.validation-list {
+  background: yellow;    
+  margin-top: 25px;
+}
+.validation-list a{  
+  display: block;
+  border: 1px solid #aaa;
+  border-radius: 30px;
+  background: url('images/validation_icon.png') no-repeat 10px 50%,
+  #ccc linear-gradient(#ccc, #eee);
+  padding: 5px 15px 5px 35px;
+  margin: 10px 0;
+}
 
 /* 슬로건 */
 .slogan{
