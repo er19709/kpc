@@ -317,8 +317,7 @@ a{
 }
 
 /* 유효성 검사 배너 */
-.validation-list {
-  background: yellow;    
+.validation-list {      
   margin-top: 25px;
 }
 .validation-list a{  
@@ -329,6 +328,42 @@ a{
   #ccc linear-gradient(#ccc, #eee);
   padding: 5px 15px 5px 35px;
   margin: 10px 0;
+}
+
+/* 웹 관련 용어 */
+.term{
+  margin-top: 20px;
+  border: 1px solid #aaa;   
+  border-radius: 5px;  
+  background: #ccc linear-gradient(#ccc, #eee);
+  padding: 10px 15px;
+  height: 150px;  
+}
+.term-heading{  
+  font-size: 1.5rem;
+  font-weight: 700;   /*글자 굵기 요소 font-weight*/
+}
+.term-list{    
+  margin-top: 10px;   /*위쪽에 공간을 줘야할때 요소 margin-top */
+}
+.term-list-subject{    
+  color: #296897;
+  margin-top: -4px;
+}
+.term-list-thumbnail{    
+  float: left;   /* float left를 주지 않으면, 그 영역 전체를 차지함. 오른쪽에 다른거를 배치못함*/
+  /* position: relative;   */  
+}
+.term-list-subject, .term-list-brief{
+    float: right; /* 오른쪽으로 배치 float에 옵션 right*/
+    width: 145px; /* 부모의 영역만큼 잡기 때문에 width를 줘서 size를 조절, block을 당긴 효과*/
+}
+.term-list-thumbnail img{
+  background-color: purple;
+  display: block  
+}
+.term-list-brief{   
+  margin-top: 5px;   
 }
 
 /* 슬로건 */
@@ -345,4 +380,4 @@ a{
 .footer{
   background-color: yellow;
   height: 10vh;
-/* } */
+}
