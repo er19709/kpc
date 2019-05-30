@@ -421,7 +421,7 @@ a{
 }
 .board-list li{
   position: relative;
-  margin-bottom: 2px;
+  margin-bottom: 8px;
 }
 .board-subject{
   display: block;
@@ -431,7 +431,6 @@ a{
   text-overflow: ellipsis;  /*white-space, overflow와 함께 사용함. 넘어가는 값을 ... 처리*/
 }
 .board-date{
-
   position: absolute;
   top: 0;
   right: 0;
@@ -444,19 +443,13 @@ a{
 .board-more::before{
   color: hsla(110, 50%, 30%, 1)
 }
-.board-list, .board-more, .pds-list, .board-more{
+.board-list, .board-more{ /*, .pds-list, .board-more{*/
   display: none;
 }
 .board-act .board-list, .board-act .board-more{
   display: block;
 }
-/* 
-.board-more{
-  position: absolute;
-  top: -8px;
-  right: -8px;
-  padding: 8px;
-} */
+
 
 
 /* 슬로건 */
