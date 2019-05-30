@@ -346,24 +346,49 @@ a{
 .term-list{    
   margin-top: 10px;   /*위쪽에 공간을 줘야할때 요소 margin-top */
 }
+.term-list-subject, .term-list-brief{
+  float: right; /* 오른쪽으로 배치 float에 옵션 right*/
+  width: 145px; /* 부모의 영역만큼 잡기 때문에 width를 줘서 size를 조절, block을 당긴 효과*/
+}
 .term-list-subject{    
   color: #296897;
   margin-top: -4px;
 }
 .term-list-thumbnail{    
-  float: left;   /* float left를 주지 않으면, 그 영역 전체를 차지함. 오른쪽에 다른거를 배치못함*/
-  /* position: relative;   */  
+  float: left;   /* float left를 주지 않으면, 그 영역 전체를 차지함. 오른쪽에 다른거를 배치못함*/ 
 }
-.term-list-subject, .term-list-brief{
-    float: right; /* 오른쪽으로 배치 float에 옵션 right*/
-    width: 145px; /* 부모의 영역만큼 잡기 때문에 width를 줘서 size를 조절, block을 당긴 효과*/
-}
-.term-list-thumbnail img{
-  background-color: purple;
-  display: block  
-}
+
 .term-list-brief{   
   margin-top: 5px;   
+}
+
+/* 검색 폼*/
+.search-form{
+  background: #ccc linear-gradient(#ccc, #eee);
+  padding: 15px 25px 10px;
+  border: 1px solid #aaa;  /*테두리 효과*/
+  border-bottom-color: #fff;  /*테두리 아래 색을 흰색으로, 마치 선이 없는 효과*/
+  border-radius: 15px 15px 0 0;    
+}
+.search-form *{                  /*  *: search form에 있는 모든 요소에 적용*/  
+  vertical-align: middle;       /*상자안의 inline상자의 높이가 다를때, middle 정렬*/
+}
+.search-form input{
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    height: 22px;
+    width: 200px;
+    padding: 1px 1px 1px 5px;
+    margin: 0 2px;   /*좌우에 2 pixel 여백 */
+}
+.btn-search{
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  color: #fff;
+  background: #222;
+  padding: 0 10px;
+  height: 22px;
+  font-size: 1.3rem;  
 }
 
 /* 슬로건 */
