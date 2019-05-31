@@ -441,7 +441,7 @@ a{
   top: 0;
   right: 0;
 }
-.board-more::before{
+.board-more::before, .news-more::before, .favorite-more::before{
   color: hsla(110, 50%, 30%, 1)
 }
 .board-list, .board-more{ /*, .pds-list, .board-more{*/
@@ -497,9 +497,7 @@ a{
   top: 0;
   right: 0;  
 }
-.news-more::before{
-  color: hsla(110,50%,30%,1)
-}
+
 
 /* 신규이벤트 및 관련 사이트 */
 .event-related{    
@@ -515,7 +513,7 @@ a{
   border-top: 1px solid #aaa;
   padding-top: 10px; 
 }
-.event-heading, .related-heading{
+.event-heading, .related-heading, .favorite-heading{
   font-size: 1.5rem;
   font-weight: 700;  
 }
@@ -580,6 +578,68 @@ a{
   line-height: 25px; /*한줄의 높이가 25px*/
   text-indent: 25px; /*첫줄 들여쓰기 효과*/
 }
+
+/* 인기사이트 */
+.favorite{
+  position: relative;  
+  margin-top: 20px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  padding: 10px;  
+  background: #ccc linear-gradient(#ccc, #eee);  
+}
+.favorite-list{
+  /* list-style-type: none => ul의 블릿 또는 ol의 숫자 기호를 보이지 않게 해줌*/
+  /* but ol에는 쓰면 안됨. 해당 항목(리스트) 못찾음 */
+  /* list-style-type: none;*/  
+  overflow: hidden;
+}
+.fovarite-list li{
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-top: 8px;
+  counter-increment: number;  /*number라는 변수 */    
+}
+.favorite-list li::before{  
+  content: counter(number);  /*before에는 contet속성 필요*/
+  color: #fff;
+  background: #999;
+  padding: 0px 6px;
+  font-size: 1.2rem;
+  border-radius: 2px;
+  margin-right: 5px;
+}
+.up, .stop, .down{
+  margin-left: auto;
+  width: 9px;
+  height: 11px;
+  padding-top: 11px;
+  overflow: hidden;
+  
+  /*띄워서 오른쪽으로 보냄*/
+  /* float: right;    */
+  /* position: absolute;
+  top: 50%;
+  right: 0;
+  margin-top: -5px; */
+
+  background: url('images/rank.png') no-repeat;
+  margin-top: 5px;
+}
+.stop{
+  background-position: 0 50%;   /*세로이미지 이동*/
+}
+.down{
+  background-position: 0 100%;   /*세로이미지 이동*/
+}
+.favorite-more{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+
 
 /* 슬로건 */
 .slogan{
