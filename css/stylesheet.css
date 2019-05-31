@@ -501,11 +501,75 @@ a{
   color: hsla(110,50%,30%,1)
 }
 
+/* 신규이벤트 및 관련 사이트 */
+.event-related{    
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  background: #ccc linear-gradient(#ccc, #eee);  
+  padding: 10px;   /*안쪽방향의 여백*/
+}
+.event{    
+  position: relative;  /*event 기준으로 배치*/
+}
+.related{
+  border-top: 1px solid #aaa;
+  padding-top: 10px; 
+}
+.event-heading, .related-heading{
+  font-size: 1.5rem;
+  font-weight: 700;  
+}
+.point-color{  
+  color: #ed552f;  
+}
+.event-thumbnail, .event-brief{
+  margin: 10px 0;   /*위아래 여백은 0*/
+}
+.event-thumbnail img{ 
+  border: 1px solid #aaa;
+  box-shadow: 5px 5px #aaa;
+}
+.event-thumbnail{  
+  /* border: 1px solid #aaa; */
+}
+.btn-event{    
+  height: 24px; 
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.btn-event-prev, .btn-event-next{
+  float: left;
+  width: 19px;
+  height: 0;
+  padding: 24px 0 0 0;  
+  margin-left: 5px;
+  background: url('images/back_forward.png') no-repeat;
+  border: 0;
+  /* cursor: pointer;    
+     */
+}
+.btn-event-next{
+  background-position: 100% 0;
+}
+
+.related-list{
+  background: #fff;
+  margin-top: 10px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  height: 27px;
+  overflow: hidden;
+}
+
+
 /* 슬로건 */
 .slogan{
   background-color: pink;
   height: 10vh;
 }
+
 
 /* 푸터 */
 .footer-bg{
