@@ -561,8 +561,25 @@ a{
   border-radius: 5px;
   height: 27px;
   overflow: hidden;
-}
 
+  /*전이될때 중간과정을 만들어주는 속성. 칸이 늘어날때 부드럽게 해줌*/
+  /* 해당 transition옵션은 평소에 반영이 되어야 하므로 hover가 아닌 상위 class에서 선언 */
+  /* transition-property: height, padding, background;
+  /* transition-duration: 2s, 0.5s, 1s;  /*height는 2초, padding은 0.5초*/
+  /* transition-delay: 0s, 2s, 2.5s; */ 
+
+  /* 위의 옵션을 한번에 선언할 수 있음 */
+  transition: all 0.4s;     
+}
+.related-list:hover{   /*마우스를 올렸을때*/
+  height: 137px;
+  padding: 5px 0 ;/*위아래는 10px, 좌우는 0*/  
+}
+.related-list a{
+  display: block;  
+  line-height: 25px; /*한줄의 높이가 25px*/
+  text-indent: 25px; /*첫줄 들여쓰기 효과*/
+}
 
 /* 슬로건 */
 .slogan{
