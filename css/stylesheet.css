@@ -594,7 +594,7 @@ a{
   /* list-style-type: none;*/  
   overflow: hidden;
 }
-.fovarite-list li{
+.favorite-list li{
   display: flex;
   align-items: center;
   position: relative;
@@ -625,7 +625,7 @@ a{
   margin-top: -5px; */
 
   background: url('images/rank.png') no-repeat;
-  margin-top: 5px;
+  /* margin-top: 5px; */
 }
 .stop{
   background-position: 0 50%;   /*세로이미지 이동*/
@@ -640,20 +640,48 @@ a{
 }
 
 
-
 /* 슬로건 */
 .slogan{
-  background-color: pink;
-  height: 10vh;
+  position: relative;
+  padding: 15px 100px 15px 180px;
 }
-
+.slogan-heading{    
+  position: absolute;
+  left: 35px;
+  bottom: -25px;  
+  width: 110px;
+  height: 83px;
+  display: flex; /* 유연한 box 모델 */
+  justify-content: center;
+  align-items: center;  
+}
+.slogan-heading::after{   /*slogan 뒤에 나오는 요소*/
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;    
+  background: url("images/coffee.png") no-repeat;  
+}
+.slogan-content{
+  color: #a09784; 
+}
+.slogan-content q::before{  
+  font-size: 3rem;
+  position: relative;
+  top: 10px;
+}
+.slogan-content q::after{
+  content: "";
+}
 
 /* 푸터 */
 .footer-bg{
-  background-color: purple;
+  background: #ccc linear-gradient(#ccc 0%, #eee 30%, #fff 70%, #fff 100%);
   
 }
 .footer{
-  background-color: yellow;
+  /* background-color: yellow; */
   height: 10vh;
 }
